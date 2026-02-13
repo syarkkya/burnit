@@ -1,0 +1,12 @@
+{
+	"required": true,
+	"package": "me.syarkkya.burnit.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"client": [
+		"BurnLogicMixin",
+		"BurnTooltipMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

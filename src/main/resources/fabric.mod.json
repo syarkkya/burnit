@@ -1,0 +1,43 @@
+{
+	"schemaVersion": 1,
+	"id": "burnit",
+	"version": "${version}",
+	"name": "Burn It",
+	"description": "Simply right-click items on a lava bucket or flint and steal directly in your inventory to burn them!",
+	"authors": [
+		"syarkkya"
+	],
+	"contact": {
+		"sources": "https://github.com/syarkkya/burnit"
+	},
+	"license": "Custom",
+	"icon": "assets/burnit/newicon16.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"me.syarkkya.burnit.BurnIt"
+		],
+		"client": [
+			"me.syarkkya.burnit.BurnItClient"
+		],
+		"modmenu": [
+			"me.syarkkya.burnit.ModMenuIntegration"
+		]
+	},
+	"mixins": [
+		{
+			"config": "burnit.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"java": ">=21",
+		"minecraft": "~1.21.1",
+		"fabricloader": ">=0.18.4",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"modmenu": ">=11.0.3",
+		"yet_another_config_lib_v3": ">=3.6.1"
+	}
+}
