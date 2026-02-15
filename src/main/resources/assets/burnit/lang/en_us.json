@@ -10,8 +10,8 @@
   "burnit.config.general.tooltip": "Server-side settings",
   "burnit.config.burnsources": "Burn Sources",
   "burnit.config.burnsources.desc": "List of Item IDs that can burn other items.\n\nUse minecraft: prefix for vanilla items, and Mod ID for modded items.\n\nFor more information, follow the link: minecraft.fandom.com/wiki/Item",
-  "burnit.config.keepdurability": "Source Durability Behavior",
-  "burnit.config.keepdurability.desc": "Determines if the source item loses durability when burning.\n\nDurability is only consumed on the first burn, mimicking lighting a fire in the world",
+  "burnit.config.keepdurability": "Burn Source Durability",
+  "burnit.config.keepdurability.desc": "Determines if the burn source item loses durability when burning items.\n\nDurability is only consumed on the first burn, mimicking lighting a fire in the world",
   "burnit.config.keepdurability.on": "Kept",
   "burnit.config.keepdurability.off": "Consumed",
 
@@ -21,7 +21,7 @@
   "burnit.config.preventfireresistant.desc": "Prevents burning of fire-resistant items, such as netherite and its derivatives. Modded items are supported",
   "burnit.config.preventfireresistant.on": "Protected",
   "burnit.config.preventfireresistant.off": "Burnable",
-  "burnit.config.preventburnsources": "Other Burn Sources",
+  "burnit.config.preventburnsources": "Burn Sources",
   "burnit.config.preventburnsources.desc": "Prevents burning one burn source against another. Burning an item against the exact same source is always forbidden",
   "burnit.config.preventburnsources.on": "Protected",
   "burnit.config.preventburnsources.off": "Burnable",
@@ -34,7 +34,7 @@
   "burnit.config.preventenchanteditems.on": "Protected",
   "burnit.config.preventenchanteditems.off": "Burnable",
   "burnit.config.preventcustomitems": "Item Protection: Custom List",
-  "burnit.config.preventcustomitems.desc": "List of Item IDs that can never be burned under any conditions.\n\nUse minecraft: prefix for vanilla items, and Mod ID for mods.\n\nFor more information, follow the link: minecraft.fandom.com/wiki/Item",
+  "burnit.config.preventcustomitems.desc": "List of Item IDs that cannot be destroyed under any conditions.\n\nThis affects both the items being burned and the fire sources.\n\nUse minecraft: prefix for vanilla items, and Mod ID for mods.\n\nFor more information, follow the link: minecraft.fandom.com/wiki/Item",
 
   "burnit.config.sounds": "Sounds",
   "burnit.config.sounds.tooltip": "Client-side settings",

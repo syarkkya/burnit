@@ -28,7 +28,7 @@ public class BurnLogic {
     public static int performBurn(ItemStack stack, ItemStack incoming, Slot slot, Player player, net.minecraft.world.inventory.AbstractContainerMenu menu) {
         if (!canBurnItem(stack, incoming, slot, player)) return 0;
         if (!BurnIt.isFireSet.containsKey(menu)) {
-            if (!ConfigLoader.getConfig().keepDurability) {
+            if (!me.syarkkya.burnit.config.ConfigLoader.getConfig().keepDurability && !me.syarkkya.burnit.config.ConfigLoader.getConfig().preventCustomItems.contains(net.minecraft.core.registries.BuiltInRegistries.ITEM.getKey(stack.getItem()).toString())) {
                 if (stack.isDamageableItem()) {
                     stack.setDamageValue(stack.getDamageValue() + 1);
                     if (stack.getDamageValue() >= stack.getMaxDamage()) {

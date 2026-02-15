@@ -41,18 +41,6 @@ public class ConfigScreen {
                                     .name(Component.translatable("burnit.config.prevent"))
                                     .description(OptionDescription.of(Component.translatable("burnit.config.prevent.desc")))
                                     .option(Option.<Boolean>createBuilder()
-                                            .name(Component.translatable("burnit.config.preventfireresistant"))
-                                            .description(OptionDescription.of(Component.translatable("burnit.config.preventfireresistant.desc")))
-                                            .binding(
-                                                    defaults.preventFireResistant,
-                                                    () -> config.preventFireResistant,
-                                                    val -> config.preventFireResistant = val
-                                            )
-                                            .controller(opt -> BooleanControllerBuilder.create(opt)
-                                                    .formatValue(val -> val ? Component.translatable("burnit.config.preventfireresistant.on") : Component.translatable("burnit.config.preventfireresistant.off"))
-                                                    .coloured(true))
-                                            .build())
-                                    .option(Option.<Boolean>createBuilder()
                                             .name(Component.translatable("burnit.config.preventburnsources"))
                                             .description(OptionDescription.of(Component.translatable("burnit.config.preventburnsources.desc")))
                                             .binding(
@@ -65,15 +53,15 @@ public class ConfigScreen {
                                                     .coloured(true))
                                             .build())
                                     .option(Option.<Boolean>createBuilder()
-                                            .name(Component.translatable("burnit.config.preventshalkerboxes"))
-                                            .description(OptionDescription.of(Component.translatable("burnit.config.preventshalkerboxes.desc")))
+                                            .name(Component.translatable("burnit.config.preventfireresistant"))
+                                            .description(OptionDescription.of(Component.translatable("burnit.config.preventfireresistant.desc")))
                                             .binding(
-                                                    defaults.preventShalkerBoxes,
-                                                    () -> config.preventShalkerBoxes,
-                                                    val -> config.preventShalkerBoxes = val
+                                                    defaults.preventFireResistant,
+                                                    () -> config.preventFireResistant,
+                                                    val -> config.preventFireResistant = val
                                             )
                                             .controller(opt -> BooleanControllerBuilder.create(opt)
-                                                    .formatValue(val -> val ? Component.translatable("burnit.config.preventshalkerboxes.on") : Component.translatable("burnit.config.preventshalkerboxes.off"))
+                                                    .formatValue(val -> val ? Component.translatable("burnit.config.preventfireresistant.on") : Component.translatable("burnit.config.preventfireresistant.off"))
                                                     .coloured(true))
                                             .build())
                                     .option(Option.<Boolean>createBuilder()
@@ -86,6 +74,18 @@ public class ConfigScreen {
                                             )
                                             .controller(opt -> BooleanControllerBuilder.create(opt)
                                                     .formatValue(val -> val ? Component.translatable("burnit.config.preventenchanteditems.on") : Component.translatable("burnit.config.preventenchanteditems.off"))
+                                                    .coloured(true))
+                                            .build())
+                                    .option(Option.<Boolean>createBuilder()
+                                            .name(Component.translatable("burnit.config.preventshalkerboxes"))
+                                            .description(OptionDescription.of(Component.translatable("burnit.config.preventshalkerboxes.desc")))
+                                            .binding(
+                                                    defaults.preventShalkerBoxes,
+                                                    () -> config.preventShalkerBoxes,
+                                                    val -> config.preventShalkerBoxes = val
+                                            )
+                                            .controller(opt -> BooleanControllerBuilder.create(opt)
+                                                    .formatValue(val -> val ? Component.translatable("burnit.config.preventshalkerboxes.on") : Component.translatable("burnit.config.preventshalkerboxes.off"))
                                                     .coloured(true))
                                             .build())
                                     .build())

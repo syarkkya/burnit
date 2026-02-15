@@ -44,6 +44,7 @@ public class ConfigLoader {
 
     @SerialEntry
     public List<String> preventCustomItems = new ArrayList<>(List.of(
+            "minecraft:lava_bucket"
     ));
 
     public static void init() {

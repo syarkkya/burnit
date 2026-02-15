@@ -10,8 +10,8 @@
   "burnit.config.general.tooltip": "Серверные настройки",
   "burnit.config.burnsources": "Источники огня",
   "burnit.config.burnsources.desc": "Список ID предметов, которые могут сжигать другие предметы.\n\nДля указания ванильных предметов используйте префикс minecraft:, а для указания предметов модов используйте Mod ID в качестве префикса.\n\nДля большей информации перейдите по ссылке: minecraft.fandom.com/wiki/Item",
-  "burnit.config.keepdurability": "Поведение прочности источника",
-  "burnit.config.keepdurability.desc": "Определяет, будет ли расходоваться прочность у источника при сжигании.\n\nПрочность расходуется только за первое сожжение, имитируя зажжение огня в мире",
+  "burnit.config.keepdurability": "Прочность источника огня",
+  "burnit.config.keepdurability.desc": "Определяет, будет ли расходоваться прочность у источника огня при сжигании предметов.\n\nПрочность расходуется только за первое сожжение, имитируя зажжение огня в мире",
   "burnit.config.keepdurability.on": "Сохраняется",
   "burnit.config.keepdurability.off": "Расходуется",
 
@@ -21,7 +21,7 @@
   "burnit.config.preventfireresistant.desc": "Запрещает сжигать предметы с защитой от огня, например, незерит и его производные. Поддерживаются предметы из модов",
   "burnit.config.preventfireresistant.on": "Защищены",
   "burnit.config.preventfireresistant.off": "Сгорают",
-  "burnit.config.preventburnsources": "Другие источники огня",
+  "burnit.config.preventburnsources": "Источники огня",
   "burnit.config.preventburnsources.desc": "Запрещает сжигать одни источники огня об другие. Сжечь источник об точно такой же источник будет запрещено в любом случае",
   "burnit.config.preventburnsources.on": "Защищены",
   "burnit.config.preventburnsources.off": "Сгорают",
@@ -34,7 +34,7 @@
   "burnit.config.preventenchanteditems.on": "Защищены",
   "burnit.config.preventenchanteditems.off": "Сгорают",
   "burnit.config.preventcustomitems": "Защита предметов: свой список",
-  "burnit.config.preventcustomitems.desc": "Список ID предметов, которые нельзя сжигать ни при каких условиях.\n\nДля указания ванильных предметов используйте префикс minecraft:, а для предметов модов — Mod ID.\n\nДля большей информации перейдите по ссылке: minecraft.fandom.com/wiki/Item",
+  "burnit.config.preventcustomitems.desc": "Список ID предметов, которые нельзя уничтожить ни при каких условиях.\n\nВлияет как на сжигаемые предметы, так и на источники огня.\n\nДля указания ванильных предметов используйте префикс minecraft:, а для предметов модов — Mod ID.\n\nДля большей информации перейдите по ссылке: minecraft.fandom.com/wiki/Item",
 
   "burnit.config.sounds": "Звуки",
   "burnit.config.sounds.tooltip": "Клиентские настройки",
