@@ -1,6 +1,10 @@
 {
-  "modmenu.summaryTranslation.modid": "Simply right-click items on a lava bucket or flint and steel directly in your inventory to burn them!",
-  "modmenu.descriptionTranslation.modid": "Simply right-click items on a lava bucket or flint and steel directly in your inventory to burn them!",
+  "stat.burnit.items_burned": "Items Burned",
+
+  "advancements.burnit.burn_diamond.title": "WHYYYY???",
+  "advancements.burnit.burn_diamond.description": "You burned a diamond. I hope it was worth the flex",
+  "advancements.burnit.burn_1000.title": "Everything Stays as Ash",
+  "advancements.burnit.burn_1000.description": "Turn 1,000 items into atoms",
 
   "burnit.tooltip": "§cRight-Click to Burn an Item",
   "burnit.all.tooltip": "§cRight-Click to Burn Them All!",
@@ -79,5 +83,8 @@
   "burnit.config.sounds.extinguish.volume.desc": "The volume of the played sound",
 
   "burnit.config.yaclmissing": "§eConfiguration Library Required!",
-  "burnit.config.yaclmissing.desc": "This mod requires §7YetAnotherConfigLib§r to access the configuration menu.\n\nWould you like to visit §aModrinth§r to download the latest version?"
+  "burnit.config.yaclmissing.desc": "This mod requires §7YetAnotherConfigLib§r to access the configuration menu.\n\nWould you like to visit §aModrinth§r to download the latest version?",
+
+  "modmenu.summaryTranslation.modid": "Simply right-click items on a lava bucket or flint and steel directly in your inventory to burn them!",
+  "modmenu.descriptionTranslation.modid": "Simply right-click items on a lava bucket or flint and steel directly in your inventory to burn them!"
 }

@@ -1,6 +1,10 @@
 {
-  "modmenu.summaryTranslation.modid": "Просто кликните правой кнопкой с предметом по ведру лавы или огниву в инвентаре, чтобы сжечь его!",
-  "modmenu.descriptionTranslation.modid": "Просто кликните правой кнопкой с предметом по ведру лавы или огниву в инвентаре, чтобы сжечь его!",
+  "stat.burnit.items_burned": "Сожжено предметов",
+
+  "advancements.burnit.burn_diamond.title": "ЗАЧЕЕЕМ???",
+  "advancements.burnit.burn_diamond.description": "Вы сожгли алмаз. Понты того стоили?",
+  "advancements.burnit.burn_1000.title": "Мир в огне",
+  "advancements.burnit.burn_1000.description": "Превратить 1000 предметов в пыль",
 
   "burnit.tooltip": "§cПравая кнопка, чтобы сжечь",
   "burnit.all.tooltip": "§cПравая кнопка, чтобы сжечь все!",
@@ -79,5 +83,8 @@
   "burnit.config.sounds.extinguish.volume.desc": "Громкость проигрываемого звука",
 
   "burnit.config.yaclmissing": "§eТребуется библиотека конфигурации!",
-  "burnit.config.yaclmissing.desc": "Этому моду необходим §7YetAnotherConfigLib§r для доступа к меню настроек.\n\nЖелаете перейти на §aModrinth§r, чтобы скачать актуальную версию?"
+  "burnit.config.yaclmissing.desc": "Этому моду необходим §7YetAnotherConfigLib§r для доступа к меню настроек.\n\nЖелаете перейти на §aModrinth§r, чтобы скачать актуальную версию?",
+
+  "modmenu.summaryTranslation.modid": "Просто кликните правой кнопкой с предметом по ведру лавы или огниву в инвентаре, чтобы сжечь его!",
+  "modmenu.descriptionTranslation.modid": "Просто кликните правой кнопкой с предметом по ведру лавы или огниву в инвентаре, чтобы сжечь его!"
 }

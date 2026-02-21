@@ -14,9 +14,7 @@ import java.util.WeakHashMap;
 
 public class BurnIt implements ModInitializer {
 	public static final Map<AbstractContainerMenu, Boolean> isFireSet = Collections.synchronizedMap(new WeakHashMap<>());
-
 	public static final ResourceLocation ITEMS_BURNED = ResourceLocation.fromNamespaceAndPath("burnit", "items_burned");
-	public static final ResourceLocation DIAMONDS_BURNED = ResourceLocation.fromNamespaceAndPath("burnit", "diamonds_burned");
 
 	@Override
 	public void onInitialize() {
@@ -24,8 +22,5 @@ public class BurnIt implements ModInitializer {
 
 		Registry.register(BuiltInRegistries.CUSTOM_STAT, "items_burned", ITEMS_BURNED);
 		Stats.CUSTOM.get(ITEMS_BURNED, StatFormatter.DEFAULT);
-
-		Registry.register(BuiltInRegistries.CUSTOM_STAT, "diamonds_burned", DIAMONDS_BURNED);
-		Stats.CUSTOM.get(DIAMONDS_BURNED, StatFormatter.DEFAULT);
 	}
 }

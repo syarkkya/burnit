@@ -15,16 +15,6 @@ public class ConfigScreen {
                     .category(ConfigCategory.createBuilder()
                             .name(Component.translatable("burnit.config.general"))
                             .tooltip(Component.translatable("burnit.config.general.tooltip"))
-                            .group(ListOption.<String>createBuilder()
-                                    .name(Component.translatable("burnit.config.burnsources"))
-                                    .description(OptionDescription.of(Component.translatable("burnit.config.burnsources.desc")))
-                                    .binding(defaults.burnSources,
-                                            () -> config.burnSources,
-                                            val -> config.burnSources = val
-                                    )
-                                    .controller(StringControllerBuilder::create)
-                                    .initial("")
-                                    .build())
                             .option(Option.<Boolean>createBuilder()
                                     .name(Component.translatable("burnit.config.keepdurability"))
                                     .description(OptionDescription.of(Component.translatable("burnit.config.keepdurability.desc")))
@@ -36,6 +26,16 @@ public class ConfigScreen {
                                     .controller(opt -> BooleanControllerBuilder.create(opt)
                                             .formatValue(val -> val ? Component.translatable("burnit.config.keepdurability.on") : Component.translatable("burnit.config.keepdurability.off"))
                                             .coloured(true))
+                                    .build())
+                            .group(ListOption.<String>createBuilder()
+                                    .name(Component.translatable("burnit.config.burnsources"))
+                                    .description(OptionDescription.of(Component.translatable("burnit.config.burnsources.desc")))
+                                    .binding(defaults.burnSources,
+                                            () -> config.burnSources,
+                                            val -> config.burnSources = val
+                                    )
+                                    .controller(StringControllerBuilder::create)
+                                    .initial("")
                                     .build())
                             .group(OptionGroup.createBuilder()
                                     .name(Component.translatable("burnit.config.prevent"))

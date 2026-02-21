@@ -1,0 +1,11 @@
+{
+  "required": true,
+  "package": "me.syarkkya.burnit.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "BurnAchievementMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

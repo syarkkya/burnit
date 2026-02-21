@@ -10,7 +10,6 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.ShulkerBoxBlock;
 
 public class BurnLogic {
-
     public static boolean canBurnItem(ItemStack stack, ItemStack incoming, Slot slot, Player player) {
         ConfigLoader config = ConfigLoader.getConfig();
         String sourceId = BuiltInRegistries.ITEM.getKey(stack.getItem()).toString();

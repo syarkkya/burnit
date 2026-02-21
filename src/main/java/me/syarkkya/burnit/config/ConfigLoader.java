@@ -20,30 +20,20 @@ public class ConfigLoader {
         return HANDLER.instance();
     }
 
-    @SerialEntry
-    public List<String> burnSources = new ArrayList<>(List.of(
+    @SerialEntry public Boolean keepDurability = false;
+
+    @SerialEntry public List<String> burnSources = new ArrayList<>(List.of(
             "minecraft:lava_bucket",
             "minecraft:fire_charge",
             "minecraft:flint_and_steel"
     ));
 
-    @SerialEntry
-    public Boolean keepDurability = false;
+    @SerialEntry public Boolean preventFireResistant = true;
+    @SerialEntry public Boolean preventBurnSources = true;
+    @SerialEntry public Boolean preventShalkerBoxes = true;
+    @SerialEntry public Boolean preventEnchantedItems = true;
 
-    @SerialEntry
-    public Boolean preventFireResistant = true;
-
-    @SerialEntry
-    public Boolean preventBurnSources = true;
-
-    @SerialEntry
-    public Boolean preventShalkerBoxes = true;
-
-    @SerialEntry
-    public boolean preventEnchantedItems = true;
-
-    @SerialEntry
-    public List<String> preventCustomItems = new ArrayList<>(List.of(
+    @SerialEntry public List<String> preventCustomItems = new ArrayList<>(List.of(
             "minecraft:lava_bucket"
     ));
 

@@ -25,6 +25,7 @@
 		]
 	},
 	"mixins": [
+		"burnit.mixins.json",
 		{
 			"config": "burnit.client.mixins.json",
 			"environment": "client"
